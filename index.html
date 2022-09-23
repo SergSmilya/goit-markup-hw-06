@@ -343,7 +343,7 @@
         </ul>
       </div>
       <!-- Footer Form -->
-      <!-- <div class="footer-form">
+      <div class="footer-form">
         <form>
           <h2 class="form-title">Підпишіться на розсилку</h2>
           <label for="mail"></label>
@@ -352,11 +352,12 @@
               <use xlink:href="./images/icons-2.svg#icon-send"></use>
             </svg></button>
         </form>
-      </div> -->
+      </div>
     </div>
   </footer>
 
   <!-- Modal -->
+  <!-- is-hidden add backdrop -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal-btn" type="button" data-modal-close>
@@ -364,6 +365,34 @@
           <use xlink:href="./images/icons-2.svg#close"></use>
         </svg>
       </button>
+      <form class="modal-form">
+
+        <div class="modal-auth" role="autentification">
+
+          <b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
+
+          <label for="name">Ім'я</label>
+          <input type="text" name="name" id="name">
+
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel">
+
+          <label for="mail">Пошта</label>
+          <input type="email" name="mail" id="mail">
+
+          <label for="comments">Коментар</label>
+          <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+        </div>
+
+        <div class="modal-privacy">
+          <input type="checkbox" name="privacy">
+          <label for="privacy">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a> </label>
+        </div>
+
+        <button class="hero-btn modal-form-btn" type="submit">Відправити</button>
+      </form>
+
+
     </div>
   </div>
 

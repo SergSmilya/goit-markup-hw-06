@@ -195,7 +195,6 @@ a {
   min-width: 216px;
   text-align: center;
   border: 1px solid transparent;
-
   color: var(--bgd-color);
   background-color: var(--accent-color);
   font-family: "Roboto", sans-serif;
@@ -630,7 +629,7 @@ span.studio,
 }
 
 /* Footer Form */
-/* .footer-form {
+.footer-form {
   min-width: 570px;
   margin-left: 93px;
 }
@@ -693,7 +692,7 @@ span.studio,
   width: 24px;
   height: 24px;
   margin-left: 10px;
-} */
+}
 
 /* Modal */
 .backdrop {
@@ -730,6 +729,58 @@ span.studio,
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms var(--timing-funcion);
+}
+
+.modal-auth {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 40px 20px 40px;
+}
+
+.modal-title {
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--color-link);
+  text-align: center;
+  margin-bottom: 12px;
+
+}
+
+.modal-auth label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-color-text);
+  margin-bottom: 4px;
+}
+
+.modal-auth input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  height: 120px;
+}
+
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.502);
+}
+
+.modal-privacy {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.modal-form-btn {
+  display: block;
+  margin: 0 auto;
 }
 
 .modal-btn {
