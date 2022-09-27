@@ -375,13 +375,13 @@
           <!-- <svg width="12px" height="12px">
             <use href="./images/icon-modal.svg#on-name"> </use>
           </svg> -->
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" placeholder="Іван Іванов">
 
           <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel">
+          <input type="tel" name="tel" id="tel" placeholder="+380...">
 
           <label for="mail">Пошта</label>
-          <input type="email" name="mail" id="mail">
+          <input type="email" name="mail" id="mail" placeholder="mail@...">
 
           <label for="comments">Коментар</label>
           <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Введіть текст"></textarea>
@@ -397,6 +397,35 @@
 
 
     </div>
+  </div>
+  <!-- test -->
+
+  <div class="test container">
+    <form class="form">
+      <label class="form__label">
+        <input class="form__input" type="text" name="name" placeholder="Ivan Ivanov">
+        <svg class="form__icon">
+          <use xlink:href="./images/icon-modal.svg#on-name"></use>
+        </svg>
+        <span class="form__text">Імя</span>
+      </label>
+
+      <label class="form__label">
+        <input class="form__input" type="email" name="email" placeholder="mail@...">
+        <span class="form__text">Електронна адреса</span>
+      </label>
+
+      <label>
+        <input type="checkbox" name="" checked>
+        <span>кнопка 1</span>
+      </label>
+
+      <label>
+        <input type="checkbox" name="">
+        <span>кнопка 2</span>
+      </label>
+    </form>
+
   </div>
 
   <!-- modal.js -->

@@ -801,3 +801,44 @@ textarea::placeholder {
   width: 11px;
   height: 11px;
 }
+
+/* test */
+
+.test {
+  display: flex;
+  padding: 94px;
+}
+
+.form__label {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  position: relative;
+  display: inline-flex;
+  height: 40px;
+  width: 300px;
+  padding: 15px;
+  padding-left: 30px;
+}
+
+.form__text {
+  position: absolute;
+  bottom: 100%;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 20px;
+  height: 20px;
+}
+
+.form__input:hover~.form__icon,
+.form__input:not(:placeholder-shown)~.form__icon {
+  fill: red;
+  transform: translate(50%, -50px);
+}
