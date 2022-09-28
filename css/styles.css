@@ -663,6 +663,7 @@ span.studio,
   padding: 15px;
   margin-right: 12px;
   color: var(--bgd-color);
+  outline: none;
 }
 
 .form-btn {
@@ -769,6 +770,7 @@ span.studio,
   height: 40px;
   padding: 12px 42px;
   transition: 250ms var(--timing-funcion);
+  outline: none;
 }
 
 .modal-wraper {
