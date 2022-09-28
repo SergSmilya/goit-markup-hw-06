@@ -752,17 +752,46 @@ span.studio,
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--primary-color-text);
+}
+
+.form__text {
+  display: inline-block;
   margin-bottom: 4px;
 }
 
 .modal-auth input {
+  position: relative;
+  display: flex;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
   height: 40px;
+  padding: 12px 42px;
+
 }
 
+.modal-wraper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form__icon {
+  width: 18px;
+  height: 18px;
+  padding: 2px;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+
+.modal__input:active {
+  fill: red;
+}
+
+
 textarea {
+  display: flex;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
@@ -774,13 +803,40 @@ textarea::placeholder {
 }
 
 .modal-privacy {
-  text-align: center;
   margin-bottom: 30px;
+}
+
+.privacy__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check {
+  appearance: none;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-link);
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.check:checked {
+  background-image: url(../images/icon\ check.svg);
+  border-color: var(--accent-color);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.privacy__link {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .modal-form-btn {
   display: block;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal-btn {
@@ -802,9 +858,14 @@ textarea::placeholder {
   height: 11px;
 }
 
+.icon-clos:hover,
+.icon-clos:focus {
+  fill: var(--accent-color);
+}
+
 /* test */
 
-.test {
+/* .test {
   display: flex;
   padding: 94px;
 }
@@ -842,3 +903,35 @@ textarea::placeholder {
   fill: red;
   transform: translate(50%, -50px);
 }
+
+/* chekbox */
+/* .chekbox {
+  list-style: none;
+}
+
+.chekbox__label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.label__input {
+  appearance: none;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-link);
+  border-radius: 4px;
+}
+
+.label__text {
+  margin-left: 20px;
+}
+
+.label__input:checked {
+  background-image: url(../images/icon\ check.svg);
+  background-origin: border-box;
+  background-size: cover;
+  border-color: var(--accent-color);
+
+} */
+
+*/
