@@ -179,7 +179,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 30;
+
   color: var(--bgd-color);
   font-weight: 900;
   font-size: 44px;
@@ -749,6 +749,7 @@ span.studio,
 }
 
 .modal-auth label {
+  display: block;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -804,7 +805,7 @@ textarea {
   padding: 12px 16px;
   height: 120px;
   transition: 250ms var(--timing-funcion);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   resize: none;
 }
 
